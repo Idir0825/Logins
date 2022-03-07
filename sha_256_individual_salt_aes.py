@@ -32,6 +32,8 @@ def encrypt(raw):
     encrypted = base64.b64encode(iv + cipher.encrypt(raw.encode())).decode()
     return encrypted
 
+print("Nikoumouk")
+
 
 def decrypt(enc):
     private_key = AES_SECRET_KEY
